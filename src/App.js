@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     let tmp = currentSongIndex + 1;
-    if (tmp > songs.length) {
+    if (tmp >= songs.length) {
       tmp = 0;
     }
     setNextSongIndex(tmp);
